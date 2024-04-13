@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(90deg, #665e65 0%, #3e3b3f 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: #fafafa;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.header {
+  background-color: #eee;
+  padding: 20px;
+}
+
+.form {
+  padding: 20px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  border: 2px solid #f0f0f0;
+  display: block;
+  border-radius: 10px;
+  font-size: 14px;
+  width: 100%;
+  padding: 10px;
+}
+
+.form-control i {
+  position: absolute;
+  top: 45px;
+  right: 10px;
+  visibility: hidden;
+}
+
+.form-control small {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.form button {
+  background-color: #6a8d92;
+  border: 2px solid #6a8d92;
+  color: #fff;
+  font-size: 14px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* Error and Success */
+.form-control.success input {
+  border-color: #2ecc71;
+}
+
+.form-control.error input {
+  border-color: #e74c3c;
+}
+
+.form-control.success i.fa-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.form-control.error small {
+  visibility: visible;
+  color: #e74c3c;
+}
+
+#resultado {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+}
+
+#resultado p {
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+#resultado p:last-child {
+  margin-bottom: 0;
+}
+
+.headerBotao {
+  position: fixed;
+  top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 999; /* Para garantir que o botão esteja sempre acima de outros elementos */
+}
+
+.botaoFirstPag {
+  background-color: #5e5df0;
+  border-radius: 100px;
+  box-shadow: #5e5df0 0 -25px 18px -14px inset, #5e5df0 0 1px 2px,
+    #5e5df0 0 2px 4px, #5e5df0 0 4px 8px, #5e5df0 0 8px 16px,
+    #5e5df0 0 16px 32px;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.botaoFirstPag:hover {
+  box-shadow: #5e5df0 0 -25px 18px -14px inset, #5e5df0 0 1px 2px,
+    #5e5df0 0 2px 4px, #5e5df0 0 4px 8px, #5e5df0 0 8px 16px,
+    #5E5DF0(44, 187, 99, 0.25) 0 16px 32px;
+  transform: scale(1.05);
+}
+
+.botaoFirstPag .firstPagText {
+  font-weight: bold;
+}

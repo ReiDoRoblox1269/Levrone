@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style2.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>(EM PROGRESSO) Formulário</title>
+  </head>
+
+  <body>
+    <div class="headerBotao">
+      <button
+        class="botaoFirstPag"
+        onclick="window.location.href = 'index.html'"
+      >
+        <span class="segFirstText">Voltar para a página principal</span>
+      </button>
+    </div>
+    <div class="container">
+      <div class="header">
+        <h2>Medidas</h2>
+      </div>
+
+      <form id="form" class="form">
+        <div class="form-control">
+          <label for="altura">Altura</label>
+          <input type="text" id="altura" placeholder="Digite sua altura..." />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>Mensagem de erro</small>
+        </div>
+
+        <div class="form-control">
+          <label for="peso">Peso</label>
+          <input type="text" id="peso" placeholder="Digite seu peso.." />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>Mensagem de erro</small>
+        </div>
+
+        <div class="form-control">
+          <label for="braco">Braço</label>
+          <input
+            type="text"
+            id="braco"
+            placeholder="Digite a medida do seu braço..."
+          />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>Mensagem de erro</small>
+        </div>
+
+        <div class="form-control">
+          <label for="coxa">Coxa</label>
+          <input
+            type="text"
+            id="coxa"
+            placeholder="Digite a medida da sua coxa..."
+          />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>Mensagem de erro</small>
+        </div>
+
+        <div class="form-control">
+          <label for="torax">Tórax</label>
+          <input
+            type="text"
+            id="torax"
+            placeholder="Digite a medida do se tórax..."
+          />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>Mensagem de erro</small>
+        </div>
+
+        <div class="form-control">
+          <label for="cintura">Cintura</label>
+          <input
+            type="text"
+            id="cintura"
+            placeholder="Digite a medida da sua cintura..."
+          />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>Mensagem de erro</small>
+        </div>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+
+    <div id="resultado" class="resultado"></div>
+
+    <script
+      src="https://kit.fontawesome.com/f9e19193d6.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
